@@ -6,10 +6,10 @@ import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
 
 @Converter(autoApply = true)
-public class SituacaoConverter implements AttributeConverter<SituacaoType, String>{
+public class ContaTypeConverter implements AttributeConverter<ContaType, Integer>{
 
 	@Override
-	public String convertToDatabaseColumn(SituacaoType attribute) {
+	public Integer convertToDatabaseColumn(ContaType attribute) {
         if (attribute == null) {
             return null;
         }
@@ -17,12 +17,12 @@ public class SituacaoConverter implements AttributeConverter<SituacaoType, Strin
 	}
 
 	@Override
-	public SituacaoType convertToEntityAttribute(String code) {
+	public ContaType convertToEntityAttribute(Integer code) {
         if (code == null) {
             return null;
         }
  
-        return Stream.of(SituacaoType.values())
+        return Stream.of(ContaType.values())
           .filter(c -> c.getCode().equals(code))
           .findFirst()
           .orElseThrow(IllegalArgumentException::new);

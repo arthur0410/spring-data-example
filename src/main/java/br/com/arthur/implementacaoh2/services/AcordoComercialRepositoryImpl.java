@@ -21,5 +21,10 @@ public class AcordoComercialRepositoryImpl implements AcordoComercialRepository{
 		return acordoComercialRepositoryJpa.findById(new AcordoComercialId(idAcordoComercial, idVersaoAcordoComercial))
 			.orElseThrow(() -> new RuntimeException());
 	}
+
+	@Override
+	public AcordoComercialDb incluirAcordoComercial(AcordoComercialDb acordoComercialDb) {
+		return acordoComercialRepositoryJpa.save(acordoComercialDb);
+	}
 	
 }

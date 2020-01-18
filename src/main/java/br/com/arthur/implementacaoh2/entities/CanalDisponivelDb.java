@@ -3,6 +3,7 @@ package br.com.arthur.implementacaoh2.entities;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -24,7 +25,7 @@ public class CanalDisponivelDb implements Serializable {
 	
 	private SituacaoType idSituacao;
 	
-	@OneToMany
+	@OneToMany(cascade = CascadeType.ALL)
 	@JoinColumns({
 		@JoinColumn(name = "ID_ACORDO_COMERCIAL"),
 		@JoinColumn(name = "ID_VERSAO_ACORDO_COMERCIAL"),

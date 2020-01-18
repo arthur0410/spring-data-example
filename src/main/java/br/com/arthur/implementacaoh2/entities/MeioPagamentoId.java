@@ -20,6 +20,11 @@ public class MeioPagamentoId implements Serializable {
 	
 	public MeioPagamentoId() {
 	}
+	
+	public MeioPagamentoId(CanalDisponivelId canalDisponivelId, Integer idMeioPagamento) {
+		this.canalDisponivelId = canalDisponivelId;
+		this.idMeioPagamento = idMeioPagamento;
+	}
 
 	public CanalDisponivelId getCanalDisponivelId() {
 		return canalDisponivelId;

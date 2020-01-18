@@ -4,5 +4,7 @@ import br.com.arthur.implementacaoh2.entities.AcordoComercialDb;
 
 public interface AcordoComercialRepository {
 
-	AcordoComercialDb consultaAcordoComercial(Long idAcordoComercial, Long idVersaoAcordoComercial); 
+	AcordoComercialDb consultaAcordoComercial(Long idAcordoComercial, Long idVersaoAcordoComercial);
+	
+	AcordoComercialDb incluirAcordoComercial(AcordoComercialDb acordoComercialDb);
 }
