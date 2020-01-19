@@ -3,9 +3,12 @@ package br.com.arthur.implementacaoh2.entities;
 import java.io.Serializable;
 
 import javax.persistence.Embeddable;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Embeddable
 public class ContaRepasseId implements Serializable {
@@ -15,7 +18,13 @@ public class ContaRepasseId implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private AcordoComercialId acordoComercialId;
+	@JsonIgnore
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumns({
+		@JoinColumn(name = "ID_ACORDO_COMERCIAL"),
+		@JoinColumn(name = "ID_VERSAO_ACORDO_COMERCIAL")
+	})
+	private AcordoComercialDb acordoComercialDb;
 	
 	@ManyToOne
 	@JoinColumns({
@@ -27,17 +36,12 @@ public class ContaRepasseId implements Serializable {
 	public ContaRepasseId() {
 	}
 
-	public ContaRepasseId(AcordoComercialId acordoComercialId, ContaParceiroDb contaParceiro) {
-		this.acordoComercialId = acordoComercialId;
-		this.contaParceiro = contaParceiro;
+	public AcordoComercialDb getAcordoComercialDb() {
+		return acordoComercialDb;
 	}
 
-	public AcordoComercialId getAcordoComercialId() {
-		return acordoComercialId;
-	}
-
-	public void setAcordoComercialId(AcordoComercialId acordoComercialId) {
-		this.acordoComercialId = acordoComercialId;
+	public void setAcordoComercialDb(AcordoComercialDb acordoComercialDb) {
+		this.acordoComercialDb = acordoComercialDb;
 	}
 
 	public ContaParceiroDb getContaParceiro() {
@@ -46,37 +50,6 @@ public class ContaRepasseId implements Serializable {
 
 	public void setContaParceiro(ContaParceiroDb contaParceiro) {
 		this.contaParceiro = contaParceiro;
-	}
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((acordoComercialId == null) ? 0 : acordoComercialId.hashCode());
-		result = prime * result + ((contaParceiro == null) ? 0 : contaParceiro.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		ContaRepasseId other = (ContaRepasseId) obj;
-		if (acordoComercialId == null) {
-			if (other.acordoComercialId != null)
-				return false;
-		} else if (!acordoComercialId.equals(other.acordoComercialId))
-			return false;
-		if (contaParceiro == null) {
-			if (other.contaParceiro != null)
-				return false;
-		} else if (!contaParceiro.equals(other.contaParceiro))
-			return false;
-		return true;
 	}
 
 }

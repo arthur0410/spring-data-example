@@ -4,6 +4,12 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
+import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Embeddable
 public class CanalDisponivelId implements Serializable {
@@ -13,26 +19,26 @@ public class CanalDisponivelId implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private AcordoComercialId acordoComercialId;
+	@JsonIgnore
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumns({
+		@JoinColumn(name = "ID_ACORDO_COMERCIAL"),
+		@JoinColumn(name = "ID_VERSAO_ACORDO_COMERCIAL")
+	})
+	private AcordoComercialDb acordoComercialDb;
 	
 	@Column(name = "ID_CANAL")
 	private String idCanal;
 	
 	public CanalDisponivelId() {
 	}
-	
-	public CanalDisponivelId(AcordoComercialId acordoComercialId, String idCanal) {
-		super();
-		this.acordoComercialId = acordoComercialId;
-		this.idCanal = idCanal;
+
+	public AcordoComercialDb getAcordoComercialDb() {
+		return acordoComercialDb;
 	}
 
-	public AcordoComercialId getAcordoComercialId() {
-		return acordoComercialId;
-	}
-
-	public void setAcordoComercialId(AcordoComercialId acordoComercialId) {
-		this.acordoComercialId = acordoComercialId;
+	public void setAcordoComercialDb(AcordoComercialDb acordoComercialDb) {
+		this.acordoComercialDb = acordoComercialDb;
 	}
 
 	public String getIdCanal() {
@@ -47,7 +53,7 @@ public class CanalDisponivelId implements Serializable {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((acordoComercialId == null) ? 0 : acordoComercialId.hashCode());
+		result = prime * result + ((acordoComercialDb == null) ? 0 : acordoComercialDb.hashCode());
 		result = prime * result + ((idCanal == null) ? 0 : idCanal.hashCode());
 		return result;
 	}
@@ -61,10 +67,10 @@ public class CanalDisponivelId implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		CanalDisponivelId other = (CanalDisponivelId) obj;
-		if (acordoComercialId == null) {
-			if (other.acordoComercialId != null)
+		if (acordoComercialDb == null) {
+			if (other.acordoComercialDb != null)
 				return false;
-		} else if (!acordoComercialId.equals(other.acordoComercialId))
+		} else if (!acordoComercialDb.equals(other.acordoComercialDb))
 			return false;
 		if (idCanal == null) {
 			if (other.idCanal != null)

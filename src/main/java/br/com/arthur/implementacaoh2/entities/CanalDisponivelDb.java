@@ -6,8 +6,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinColumns;
+import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -25,12 +24,10 @@ public class CanalDisponivelDb implements Serializable {
 	
 	private SituacaoType idSituacao;
 	
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumns({
-		@JoinColumn(name = "ID_ACORDO_COMERCIAL"),
-		@JoinColumn(name = "ID_VERSAO_ACORDO_COMERCIAL"),
-		@JoinColumn(name = "ID_CANAL")
-	})
+	@OneToMany(mappedBy = "meioPagamentoId.canalDisponivelDb",
+			fetch = FetchType.LAZY,
+	        cascade = CascadeType.ALL,
+	        orphanRemoval = true)
 	private List<MeioPagamentoDb> meiosPagamento;
 
 	public CanalDisponivelDb() {

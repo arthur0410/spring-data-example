@@ -7,8 +7,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinColumns;
+import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -29,18 +28,16 @@ public class AcordoComercialDb implements Serializable {
 	
 	private SituacaoType idSituacao;
 	
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumns({
-		@JoinColumn(name = "ID_ACORDO_COMERCIAL"),
-		@JoinColumn(name = "ID_VERSAO_ACORDO_COMERCIAL")
-	})
+	@OneToMany(mappedBy = "canalDisponivelId.acordoComercialDb",
+			fetch = FetchType.LAZY,
+	        cascade = CascadeType.ALL,
+	        orphanRemoval = true)
 	private List<CanalDisponivelDb> canaisDisponiveis;
 	
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumns({
-		@JoinColumn(name = "ID_ACORDO_COMERCIAL"),
-		@JoinColumn(name = "ID_VERSAO_ACORDO_COMERCIAL")
-	})
+	@OneToMany(mappedBy = "contaRepasseId.acordoComercialDb",
+			fetch = FetchType.LAZY,
+	        cascade = CascadeType.ALL,
+	        orphanRemoval = true)
 	private List<ContaRepasseDb> contasRepasse;
 	
 	public AcordoComercialDb() {
@@ -77,21 +74,21 @@ public class AcordoComercialDb implements Serializable {
 	public void setContasRepasse(List<ContaRepasseDb> contasRepasse) {
 		this.contasRepasse = contasRepasse;
 	}
-
-	public AcordoComercial convert() {
-		AcordoComercial acordoComercial = new AcordoComercial();
-		acordoComercial.setIdAcordoComercial(this.acordoComercialId.getIdAcordoComercial());
-		acordoComercial.setIdVersaoAcordoComercial(this.acordoComercialId.getIdVersaoAcordoComercial());
-		acordoComercial.setConfiguracoesCanal(new ArrayList<>());
-		for (CanalDisponivelDb canalDisponivelDb : canaisDisponiveis) {
-			ConfiguracaoCanal configuracaoCanal = new ConfiguracaoCanal();
-			configuracaoCanal.setIdCanal(canalDisponivelDb.getCanalDisponivelId().getIdCanal());
-			configuracaoCanal.setMeiosPagamento(new ArrayList<>());
-			for (MeioPagamentoDb meioPagamentoDb : canalDisponivelDb.getMeiosPagamento()) {
-				configuracaoCanal.getMeiosPagamento().add(meioPagamentoDb.getMeioPagamentoId().getIdMeioPagamento());
-			}
-			acordoComercial.getConfiguracoesCanal().add(configuracaoCanal);
+	
+	public static AcordoComercialDb converterParaDb(AcordoComercial acordoComercial) {
+		AcordoComercialDb db = new AcordoComercialDb();
+		AcordoComercialId acordoComercialId = new AcordoComercialId(acordoComercial.getIdAcordoComercial(), 
+						acordoComercial.getIdVersaoAcordoComercial());
+		db.setAcordoComercialId(acordoComercialId);
+		db.setCanaisDisponiveis(new ArrayList<>());
+		for (ConfiguracaoCanal configuracaoCanal : acordoComercial.getConfiguracoesCanal()) {
+			CanalDisponivelDb canalDisponivel = new CanalDisponivelDb();
+			canalDisponivel.setCanalDisponivelId(new CanalDisponivelId());
+			canalDisponivel.getCanalDisponivelId().setAcordoComercialDb(db);
+			canalDisponivel.getCanalDisponivelId().setIdCanal(configuracaoCanal.getIdCanal());
+			canalDisponivel.setIdSituacao(SituacaoType.ATIVO);
+			db.getCanaisDisponiveis().add(canalDisponivel);
 		}
-		return acordoComercial;
+		return db;
 	}
 }

@@ -4,6 +4,12 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
+import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Embeddable
 public class MeioPagamentoId implements Serializable {
@@ -13,25 +19,27 @@ public class MeioPagamentoId implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private CanalDisponivelId canalDisponivelId;
+	@JsonIgnore
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumns({
+		@JoinColumn(name = "ID_ACORDO_COMERCIAL"),
+		@JoinColumn(name = "ID_VERSAO_ACORDO_COMERCIAL"),
+		@JoinColumn(name = "ID_CANAL"),
+	})
+	private CanalDisponivelDb canalDisponivelDb;
 	
 	@Column(name = "ID_MEIO_PAGAMENTO")
 	private Integer idMeioPagamento;
 	
 	public MeioPagamentoId() {
 	}
-	
-	public MeioPagamentoId(CanalDisponivelId canalDisponivelId, Integer idMeioPagamento) {
-		this.canalDisponivelId = canalDisponivelId;
-		this.idMeioPagamento = idMeioPagamento;
+
+	public CanalDisponivelDb getCanalDisponivelDb() {
+		return canalDisponivelDb;
 	}
 
-	public CanalDisponivelId getCanalDisponivelId() {
-		return canalDisponivelId;
-	}
-
-	public void setCanalDisponivelId(CanalDisponivelId canalDisponivelId) {
-		this.canalDisponivelId = canalDisponivelId;
+	public void setCanalDisponivelDb(CanalDisponivelDb canalDisponivelDb) {
+		this.canalDisponivelDb = canalDisponivelDb;
 	}
 
 	public Integer getIdMeioPagamento() {
@@ -46,7 +54,7 @@ public class MeioPagamentoId implements Serializable {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((canalDisponivelId == null) ? 0 : canalDisponivelId.hashCode());
+		result = prime * result + ((canalDisponivelDb == null) ? 0 : canalDisponivelDb.hashCode());
 		result = prime * result + ((idMeioPagamento == null) ? 0 : idMeioPagamento.hashCode());
 		return result;
 	}
@@ -60,10 +68,10 @@ public class MeioPagamentoId implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		MeioPagamentoId other = (MeioPagamentoId) obj;
-		if (canalDisponivelId == null) {
-			if (other.canalDisponivelId != null)
+		if (canalDisponivelDb == null) {
+			if (other.canalDisponivelDb != null)
 				return false;
-		} else if (!canalDisponivelId.equals(other.canalDisponivelId))
+		} else if (!canalDisponivelDb.equals(other.canalDisponivelDb))
 			return false;
 		if (idMeioPagamento == null) {
 			if (other.idMeioPagamento != null)
@@ -72,5 +80,5 @@ public class MeioPagamentoId implements Serializable {
 			return false;
 		return true;
 	}
-	
+
 }
