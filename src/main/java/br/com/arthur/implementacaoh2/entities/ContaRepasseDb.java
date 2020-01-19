@@ -24,6 +24,13 @@ public class ContaRepasseDb implements Serializable {
 	
 	@Column(name = "CODIGO_FINALIDADE_SPB")
 	private String codigoFinalidadeSPB;
+	
+	public ContaRepasseDb() {
+	}
+
+	public ContaRepasseDb(ContaRepasseId contaRepasseId) {
+		this.contaRepasseId = contaRepasseId;
+	}
 
 	public ContaRepasseId getContaRepasseId() {
 		return contaRepasseId;

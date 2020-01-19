@@ -1,16 +1,12 @@
 package br.com.arthur.implementacaoh2.entities;
 
 import java.io.Serializable;
-import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinColumns;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -28,13 +24,13 @@ public class ContaParceiroDb implements Serializable {
 	
 	@Column(name = "TIPO_CONTA")
 	private ContaType tipoConta;
-	
-	@OneToMany
-	@JoinColumns({
-		@JoinColumn(name = "ID_PARCEIRO", referencedColumnName = "ID_PARCEIRO"),
-		@JoinColumn(name = "ID_CONTA", referencedColumnName = "ID_CONTA")
-	})
-	List<ContaRepasseDb> contasRepasse;
+
+	public ContaParceiroDb() {
+	}
+
+	public ContaParceiroDb(ContaId contaId) {
+		this.contaId = contaId;
+	}
 
 	public ContaId getContaId() {
 		return contaId;

@@ -19,6 +19,14 @@ public class ContaId implements Serializable {
 	@Column(name = "ID_CONTA")
 	private Integer idConta;
 	
+	public ContaId() {
+	}
+	
+	public ContaId(Integer idParceiro, Integer idConta) {
+		this.idParceiro = idParceiro;
+		this.idConta = idConta;
+	}
+
 	public Integer getIdParceiro() {
 		return idParceiro;
 	}

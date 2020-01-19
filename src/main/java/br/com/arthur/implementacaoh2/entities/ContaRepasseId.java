@@ -23,6 +23,14 @@ public class ContaRepasseId implements Serializable {
 		@JoinColumn(name = "ID_PARCEIRO", referencedColumnName= "ID_PARCEIRO")
 	})
 	private ContaParceiroDb contaParceiro;
+	
+	public ContaRepasseId() {
+	}
+
+	public ContaRepasseId(AcordoComercialId acordoComercialId, ContaParceiroDb contaParceiro) {
+		this.acordoComercialId = acordoComercialId;
+		this.contaParceiro = contaParceiro;
+	}
 
 	public AcordoComercialId getAcordoComercialId() {
 		return acordoComercialId;
