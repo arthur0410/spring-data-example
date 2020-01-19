@@ -35,6 +35,11 @@ public class ContaRepasseId implements Serializable {
 	
 	public ContaRepasseId() {
 	}
+	
+	public ContaRepasseId(AcordoComercialDb acordoComercialDb, ContaParceiroDb contaParceiro) {
+		this.acordoComercialDb = acordoComercialDb;
+		this.contaParceiro = contaParceiro;
+	}
 
 	public AcordoComercialDb getAcordoComercialDb() {
 		return acordoComercialDb;

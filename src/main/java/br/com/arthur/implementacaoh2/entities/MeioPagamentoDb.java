@@ -18,7 +18,7 @@ public class MeioPagamentoDb implements Serializable {
 	@EmbeddedId
 	private MeioPagamentoId meioPagamentoId;
 	
-	private SituacaoType situacao;
+	private SituacaoDbType situacao;
 	
 	public MeioPagamentoDb() {
 	}
@@ -31,11 +31,11 @@ public class MeioPagamentoDb implements Serializable {
 		this.meioPagamentoId = meioPagamentoId;
 	}
 
-	public SituacaoType getSituacao() {
+	public SituacaoDbType getSituacao() {
 		return situacao;
 	}
 
-	public void setSituacao(SituacaoType situacao) {
+	public void setSituacao(SituacaoDbType situacao) {
 		this.situacao = situacao;
 	}
 	

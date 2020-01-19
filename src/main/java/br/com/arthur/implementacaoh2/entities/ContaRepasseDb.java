@@ -27,6 +27,12 @@ public class ContaRepasseDb implements Serializable {
 	
 	public ContaRepasseDb() {
 	}
+	
+	public ContaRepasseDb(ContaRepasseId contaRepasseId, Double percentualRateio, String codigoFinalidadeSPB) {
+		this.contaRepasseId = contaRepasseId;
+		this.percentualRateio = percentualRateio;
+		this.codigoFinalidadeSPB = codigoFinalidadeSPB;
+	}
 
 	public ContaRepasseDb(ContaRepasseId contaRepasseId) {
 		this.contaRepasseId = contaRepasseId;

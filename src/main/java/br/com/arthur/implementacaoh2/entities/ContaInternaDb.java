@@ -29,6 +29,13 @@ public class ContaInternaDb extends ContaParceiroDb implements Serializable {
 	@Column(name = "NDV")
 	private String digitoVerificador;
 
+	public ContaInternaDb() {
+	}
+
+	public ContaInternaDb(ContaId contaId, ContaType tipoConta) {
+		super(contaId, tipoConta);
+	}
+
 	public String getBanco() {
 		return banco;
 	}

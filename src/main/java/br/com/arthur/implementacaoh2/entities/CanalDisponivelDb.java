@@ -22,7 +22,7 @@ public class CanalDisponivelDb implements Serializable {
 	@EmbeddedId
 	private CanalDisponivelId canalDisponivelId;
 	
-	private SituacaoType idSituacao;
+	private SituacaoDbType idSituacao;
 	
 	@OneToMany(mappedBy = "meioPagamentoId.canalDisponivelDb",
 			fetch = FetchType.LAZY,
@@ -41,11 +41,11 @@ public class CanalDisponivelDb implements Serializable {
 		this.canalDisponivelId = canalDisponivelId;
 	}
 
-	public SituacaoType getIdSituacao() {
+	public SituacaoDbType getIdSituacao() {
 		return idSituacao;
 	}
 
-	public void setIdSituacao(SituacaoType idSituacao) {
+	public void setIdSituacao(SituacaoDbType idSituacao) {
 		this.idSituacao = idSituacao;
 	}
 

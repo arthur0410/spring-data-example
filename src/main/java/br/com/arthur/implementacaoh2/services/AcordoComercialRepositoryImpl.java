@@ -1,5 +1,7 @@
 package br.com.arthur.implementacaoh2.services;
 
+import java.util.Date;
+
 import org.springframework.stereotype.Repository;
 
 import br.com.arthur.implementacaoh2.entities.AcordoComercialDb;
@@ -25,6 +27,15 @@ public class AcordoComercialRepositoryImpl implements AcordoComercialRepository{
 	@Override
 	public AcordoComercialDb incluirAcordoComercial(AcordoComercialDb acordoComercialDb) {
 		return acordoComercialRepositoryJpa.save(acordoComercialDb);
+	}
+
+	@Override
+	public void verificarSeExisteAcordoComercialAtivo(Integer idParceiro, Integer idProduto,
+			Date dataInicioVigencia, boolean vigenciaIndeterminada, Date dataFimVigencia) {
+		if (acordoComercialRepositoryJpa.consultarAcordoComercialAtivo(idParceiro, idProduto, dataInicioVigencia, vigenciaIndeterminada, dataFimVigencia)
+				.isPresent()) {
+			throw new RuntimeException();
+		}
 	}
 	
 }

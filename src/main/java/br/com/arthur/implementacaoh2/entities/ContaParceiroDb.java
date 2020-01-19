@@ -28,6 +28,11 @@ public class ContaParceiroDb implements Serializable {
 	public ContaParceiroDb() {
 	}
 
+	public ContaParceiroDb(ContaId contaId, ContaType tipoConta) {
+		this.contaId = contaId;
+		this.tipoConta = tipoConta;
+	}
+
 	public ContaParceiroDb(ContaId contaId) {
 		this.contaId = contaId;
 	}

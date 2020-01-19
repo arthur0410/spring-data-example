@@ -25,6 +25,13 @@ public class ContaExternaDb extends ContaParceiroDb implements Serializable {
 	
 	@Column(name = "CONTA")
 	private String conta;
+	
+	public ContaExternaDb() {
+	}
+
+	public ContaExternaDb(ContaId contaId, ContaType tipoConta) {
+		super(contaId, tipoConta);
+	}
 
 	public String getBanco() {
 		return banco;
