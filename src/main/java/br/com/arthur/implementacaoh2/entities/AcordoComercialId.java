@@ -14,32 +14,32 @@ public class AcordoComercialId implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Column(name = "ID_ACORDO_COMERCIAL")
-	private Long idAcordoComercial;
+	private Integer idAcordoComercial;
 	
 	@Column(name = "ID_VERSAO_ACORDO_COMERCIAL")
-	private Long idVersaoAcordoComercial;
+	private Integer idVersaoAcordoComercial;
 
 	public AcordoComercialId() {
 	}
 	
-	public AcordoComercialId(Long idAcordoComercial, Long idVersaoAcordoComercial) {
+	public AcordoComercialId(Integer idAcordoComercial, Integer idVersaoAcordoComercial) {
 		this.idAcordoComercial = idAcordoComercial;
 		this.idVersaoAcordoComercial = idVersaoAcordoComercial;
 	}
 
-	public Long getIdAcordoComercial() {
+	public Integer getIdAcordoComercial() {
 		return idAcordoComercial;
 	}
 
-	public void setIdAcordoComercial(Long idAcordoComercial) {
+	public void setIdAcordoComercial(Integer idAcordoComercial) {
 		this.idAcordoComercial = idAcordoComercial;
 	}
 
-	public Long getIdVersaoAcordoComercial() {
+	public Integer getIdVersaoAcordoComercial() {
 		return idVersaoAcordoComercial;
 	}
 
-	public void setIdVersaoAcordoComercial(Long idVersaoAcordoComercial) {
+	public void setIdVersaoAcordoComercial(Integer idVersaoAcordoComercial) {
 		this.idVersaoAcordoComercial = idVersaoAcordoComercial;
 	}
 

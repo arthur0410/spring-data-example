@@ -1,6 +1,7 @@
 package br.com.arthur.implementacaoh2.entities;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -46,6 +47,9 @@ public class AcordoComercialDb implements Serializable {
 	
 	@Column(name = "DATA_FIM_VIGENCIA")
 	private Date dataFimVigencia;
+	
+	@Column(name = "DATA_INCLUSAO")
+	private LocalDateTime dataInclusao;
 	
 	@OneToMany(mappedBy = "canalDisponivelId.acordoComercialDb",
 			fetch = FetchType.LAZY,
@@ -133,11 +137,19 @@ public class AcordoComercialDb implements Serializable {
 	public void setIdProduto(Integer idProduto) {
 		this.idProduto = idProduto;
 	}
+	
+	public LocalDateTime getDataInclusao() {
+		return dataInclusao;
+	}
+
+	public void setDataInclusao(LocalDateTime dataInclusao) {
+		this.dataInclusao = dataInclusao;
+	}
 
 	public static AcordoComercialDb converterParaDb(AcordoComercial acordoComercial) {
 		AcordoComercialDb db = new AcordoComercialDb();
-		AcordoComercialId acordoComercialId = new AcordoComercialId(acordoComercial.getIdAcordoComercial(), 
-						acordoComercial.getIdVersaoAcordoComercial());
+		AcordoComercialId acordoComercialId = new AcordoComercialId(acordoComercial.getIdAcordoComercial().intValue(), 
+						acordoComercial.getIdVersaoAcordoComercial().intValue());
 		db.setAcordoComercialId(acordoComercialId);
 		db.setDataInicioVigencia(acordoComercial.getDataInicioVigencia());
 		db.setDataFimVigencia(acordoComercial.getDataFimVigencia());
