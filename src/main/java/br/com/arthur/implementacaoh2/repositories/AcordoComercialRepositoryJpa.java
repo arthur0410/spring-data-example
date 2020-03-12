@@ -1,9 +1,10 @@
 package br.com.arthur.implementacaoh2.repositories;
 
 import java.util.Date;
-import java.util.List;
 import java.util.Optional;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
@@ -33,6 +34,9 @@ public interface AcordoComercialRepositoryJpa extends JpaRepository<AcordoComerc
 			+ "ON x.ID_ACORDO_COMERCIAL = AC.ID_ACORDO_COMERCIAL AND "
 			+ "x.MAIOR_VERSAO = AC.ID_VERSAO_ACORDO_COMERCIAL "
 			+ "ORDER BY DATA_INCLUSAO DESC",
+			countQuery = "SELECT ID_ACORDO_COMERCIAL, MAX(ID_VERSAO_ACORDO_COMERCIAL) " + 
+						   "FROM ACORDO_COMERCIAL " + 
+						   "GROUP BY ID_ACORDO_COMERCIAL",
 			nativeQuery = true)
-	List<AcordoComercialIdDto> consultarAcordosComerciais();
+	Page<AcordoComercialIdDto> consultarAcordosComerciais(Pageable pageable);
 }

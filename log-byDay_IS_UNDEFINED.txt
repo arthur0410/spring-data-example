@@ -7938,4 +7938,865 @@
   "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
   "message" : "After request [uri=/acordos_comerciais]",
   "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:32.393Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "br.com.arthur.implementacaoh2.App",
+  "message" : "Starting App on DESKTOP-JGRRF34 with PID 1252 (C:\\Users\\nakag\\Documents\\workspace-spring-tool-suite-4-4.3.2.RELEASE\\implementacaoh2\\target\\classes started by nakag in C:\\Users\\nakag\\Documents\\workspace-spring-tool-suite-4-4.3.2.RELEASE\\implementacaoh2)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:32.420Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "br.com.arthur.implementacaoh2.App",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:33.429Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data repositories in DEFAULT mode.",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:33.579Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 135ms. Found 6 repository interfaces.",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:34.117Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+  "message" : "Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e845b464] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:34.808Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat initialized with port(s): 8080 (http)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:34.926Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Initializing ProtocolHandler [\"http-nio-8080\"]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:34.948Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.catalina.core.StandardService",
+  "message" : "Starting service [Tomcat]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:34.949Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.catalina.core.StandardEngine",
+  "message" : "Starting Servlet engine: [Apache Tomcat/9.0.22]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:35.140Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "message" : "Initializing Spring embedded WebApplicationContext",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:35.140Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.web.context.ContextLoader",
+  "message" : "Root WebApplicationContext: initialization completed in 2620 ms",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:35.243Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "Filter 'logFilter' configured for use",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:35.390Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Starting...",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:18:35.703Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Start completed.",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:11.136Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "br.com.arthur.implementacaoh2.App",
+  "message" : "Starting App on DESKTOP-JGRRF34 with PID 12992 (C:\\Users\\nakag\\Documents\\workspace-spring-tool-suite-4-4.3.2.RELEASE\\implementacaoh2\\target\\classes started by nakag in C:\\Users\\nakag\\Documents\\workspace-spring-tool-suite-4-4.3.2.RELEASE\\implementacaoh2)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:11.155Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "br.com.arthur.implementacaoh2.App",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:11.884Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data repositories in DEFAULT mode.",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:11.989Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 97ms. Found 6 repository interfaces.",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:12.384Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+  "message" : "Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6747d005] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:12.916Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat initialized with port(s): 8080 (http)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:12.931Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Initializing ProtocolHandler [\"http-nio-8080\"]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:12.946Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.catalina.core.StandardService",
+  "message" : "Starting service [Tomcat]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:12.946Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.catalina.core.StandardEngine",
+  "message" : "Starting Servlet engine: [Apache Tomcat/9.0.22]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:13.069Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "message" : "Initializing Spring embedded WebApplicationContext",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:13.070Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.web.context.ContextLoader",
+  "message" : "Root WebApplicationContext: initialization completed in 1869 ms",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:13.144Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "Filter 'logFilter' configured for use",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:13.302Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Starting...",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:13.472Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Start completed.",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:13.551Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.jpa.internal.util.LogHelper",
+  "message" : "HHH000204: Processing PersistenceUnitInfo [\n\tname: default\n\t...]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:13.638Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.Version",
+  "message" : "HHH000412: Hibernate Core {5.3.10.Final}",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:13.640Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Environment",
+  "message" : "HHH000206: hibernate.properties not found",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:13.795Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.annotations.common.Version",
+  "message" : "HCANN000001: Hibernate Commons Annotations {5.0.4.Final}",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:13.955Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.dialect.Dialect",
+  "message" : "HHH000400: Using dialect: org.hibernate.dialect.H2Dialect",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:14.227Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "org.hibernate.mapping.RootClass",
+  "message" : "HHH000038: Composite-id class does not override equals(): br.com.arthur.implementacaoh2.entities.ContaRepasseId",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:14.227Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "org.hibernate.mapping.RootClass",
+  "message" : "HHH000039: Composite-id class does not override hashCode(): br.com.arthur.implementacaoh2.entities.ContaRepasseId",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:14.762Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.tool.schema.internal.SchemaCreatorImpl",
+  "message" : "HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1491cd6c'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:14.765Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:15.077Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.hql.internal.QueryTranslatorFactoryInitiator",
+  "message" : "HHH000397: Using ASTQueryTranslatorFactory",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:15.778Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor",
+  "message" : "Initializing ExecutorService 'applicationTaskExecutor'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:15.830Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration",
+  "message" : "spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:16.050Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Starting ProtocolHandler [\"http-nio-8080\"]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:16.081Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat started on port(s): 8080 (http) with context path ''",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:16.083Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "br.com.arthur.implementacaoh2.App",
+  "message" : "Started App in 5.254 seconds (JVM running for 5.846)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:21.927Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "br.com.arthur.implementacaoh2.App",
+  "message" : "Starting App on DESKTOP-JGRRF34 with PID 9980 (C:\\Users\\nakag\\Documents\\workspace-spring-tool-suite-4-4.3.2.RELEASE\\implementacaoh2\\target\\classes started by nakag in C:\\Users\\nakag\\Documents\\workspace-spring-tool-suite-4-4.3.2.RELEASE\\implementacaoh2)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:21.960Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "br.com.arthur.implementacaoh2.App",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:23.120Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data repositories in DEFAULT mode.",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:23.300Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 166ms. Found 6 repository interfaces.",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:23.821Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+  "message" : "Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d659dae4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:24.492Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat initialized with port(s): 8080 (http)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:24.590Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Initializing ProtocolHandler [\"http-nio-8080\"]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:24.604Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.catalina.core.StandardService",
+  "message" : "Starting service [Tomcat]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:24.604Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.catalina.core.StandardEngine",
+  "message" : "Starting Servlet engine: [Apache Tomcat/9.0.22]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:24.791Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "message" : "Initializing Spring embedded WebApplicationContext",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:24.792Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.web.context.ContextLoader",
+  "message" : "Root WebApplicationContext: initialization completed in 2723 ms",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:24.901Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "Filter 'logFilter' configured for use",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:25.068Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Starting...",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:25.342Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Start completed.",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:25.458Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.jpa.internal.util.LogHelper",
+  "message" : "HHH000204: Processing PersistenceUnitInfo [\n\tname: default\n\t...]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:25.605Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.Version",
+  "message" : "HHH000412: Hibernate Core {5.3.10.Final}",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:25.616Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Environment",
+  "message" : "HHH000206: hibernate.properties not found",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:25.947Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.annotations.common.Version",
+  "message" : "HCANN000001: Hibernate Commons Annotations {5.0.4.Final}",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:26.241Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.dialect.Dialect",
+  "message" : "HHH000400: Using dialect: org.hibernate.dialect.H2Dialect",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:26.752Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "org.hibernate.mapping.RootClass",
+  "message" : "HHH000038: Composite-id class does not override equals(): br.com.arthur.implementacaoh2.entities.ContaRepasseId",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:26.752Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "org.hibernate.mapping.RootClass",
+  "message" : "HHH000039: Composite-id class does not override hashCode(): br.com.arthur.implementacaoh2.entities.ContaRepasseId",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:27.603Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.tool.schema.internal.SchemaCreatorImpl",
+  "message" : "HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5af56240'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:27.607Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:28.171Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.hql.internal.QueryTranslatorFactoryInitiator",
+  "message" : "HHH000397: Using ASTQueryTranslatorFactory",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:29.089Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor",
+  "message" : "Initializing ExecutorService 'applicationTaskExecutor'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:29.180Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration",
+  "message" : "spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:29.490Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Starting ProtocolHandler [\"http-nio-8080\"]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:29.552Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat started on port(s): 8080 (http) with context path ''",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:29.555Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "br.com.arthur.implementacaoh2.App",
+  "message" : "Started App in 8.184 seconds (JVM running for 9.34)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:37.209Z",
+  "level" : "INFO",
+  "thread" : "http-nio-8080-exec-3",
+  "logger" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "message" : "Initializing Spring DispatcherServlet 'dispatcherServlet'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:37.209Z",
+  "level" : "INFO",
+  "thread" : "http-nio-8080-exec-3",
+  "logger" : "org.springframework.web.servlet.DispatcherServlet",
+  "message" : "Initializing Servlet 'dispatcherServlet'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:37.228Z",
+  "level" : "INFO",
+  "thread" : "http-nio-8080-exec-3",
+  "logger" : "org.springframework.web.servlet.DispatcherServlet",
+  "message" : "Completed initialization in 18 ms",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:40.557Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-3",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "Before request [uri=/acordos_comerciais]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:40.919Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-3",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "After request [uri=/acordos_comerciais;payload={\n    \"id_acordo_comercial\": 1,\n    \"id_versao_acordo_comercial\": 1,\n    \"id_parceiro\": 1,\n    \"id_produto\": 1,\n    \"situacao\": \"ativo\",\n    \"data_inicio_vigencia\": \"2020-12-01\",\n    \"vigencia_indeterminada\": false,\n    \"data_fim_vigencia\": \"2020-12-02\",\n    \"configuracoes_canal\": [\n        {\n            \"id_canal\": \"C1\"\n        },\n        {\n            \"id_canal\": \"71\"\n        }\n    ],\n    \"contas_repasse\": [\n        {\n            \"id_conta\": 1,\n            \"codigo_finalidade_spb\": \"12345\",\n            \"percentual_raterio\": 50\n        },\n        {\n            \"id_conta\": 2,\n            \"codigo_finalidade_spb\": \"12345\",\n            \"percentual_raterio\": 50\n        }\n    ]\n}]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:53.777Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-1",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "Before request [uri=/acordos_comerciais]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:53.799Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-1",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "After request [uri=/acordos_comerciais;payload={\n    \"id_acordo_comercial\": 1,\n    \"id_versao_acordo_comercial\": 2,\n    \"id_parceiro\": 1,\n    \"id_produto\": 1,\n    \"situacao\": \"ativo\",\n    \"data_inicio_vigencia\": \"2020-12-01\",\n    \"vigencia_indeterminada\": false,\n    \"data_fim_vigencia\": \"2020-12-02\",\n    \"configuracoes_canal\": [\n        {\n            \"id_canal\": \"C1\"\n        },\n        {\n            \"id_canal\": \"71\"\n        }\n    ],\n    \"contas_repasse\": [\n        {\n            \"id_conta\": 1,\n            \"codigo_finalidade_spb\": \"12345\",\n            \"percentual_raterio\": 50\n        },\n        {\n            \"id_conta\": 2,\n            \"codigo_finalidade_spb\": \"12345\",\n            \"percentual_raterio\": 50\n        }\n    ]\n}]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:58.824Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-4",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "Before request [uri=/acordos_comerciais]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:20:58.839Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-4",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "After request [uri=/acordos_comerciais;payload={\n    \"id_acordo_comercial\": 2,\n    \"id_versao_acordo_comercial\": 1,\n    \"id_parceiro\": 1,\n    \"id_produto\": 1,\n    \"situacao\": \"ativo\",\n    \"data_inicio_vigencia\": \"2020-12-01\",\n    \"vigencia_indeterminada\": false,\n    \"data_fim_vigencia\": \"2020-12-02\",\n    \"configuracoes_canal\": [\n        {\n            \"id_canal\": \"C1\"\n        },\n        {\n            \"id_canal\": \"71\"\n        }\n    ],\n    \"contas_repasse\": [\n        {\n            \"id_conta\": 1,\n            \"codigo_finalidade_spb\": \"12345\",\n            \"percentual_raterio\": 50\n        },\n        {\n            \"id_conta\": 2,\n            \"codigo_finalidade_spb\": \"12345\",\n            \"percentual_raterio\": 50\n        }\n    ]\n}]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:06.481Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-5",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "Before request [uri=/acordos_comerciais]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:23.461Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-5",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "After request [uri=/acordos_comerciais]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:49.356Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "br.com.arthur.implementacaoh2.App",
+  "message" : "Starting App on DESKTOP-JGRRF34 with PID 1600 (C:\\Users\\nakag\\Documents\\workspace-spring-tool-suite-4-4.3.2.RELEASE\\implementacaoh2\\target\\classes started by nakag in C:\\Users\\nakag\\Documents\\workspace-spring-tool-suite-4-4.3.2.RELEASE\\implementacaoh2)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:49.376Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "br.com.arthur.implementacaoh2.App",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:50.103Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data repositories in DEFAULT mode.",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:50.229Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 116ms. Found 6 repository interfaces.",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:50.636Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+  "message" : "Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb2565c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:51.177Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat initialized with port(s): 8080 (http)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:51.193Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Initializing ProtocolHandler [\"http-nio-8080\"]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:51.206Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.catalina.core.StandardService",
+  "message" : "Starting service [Tomcat]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:51.207Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.catalina.core.StandardEngine",
+  "message" : "Starting Servlet engine: [Apache Tomcat/9.0.22]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:51.321Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "message" : "Initializing Spring embedded WebApplicationContext",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:51.321Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.web.context.ContextLoader",
+  "message" : "Root WebApplicationContext: initialization completed in 1901 ms",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:51.394Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "Filter 'logFilter' configured for use",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:51.603Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Starting...",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:51.785Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Start completed.",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:51.865Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.jpa.internal.util.LogHelper",
+  "message" : "HHH000204: Processing PersistenceUnitInfo [\n\tname: default\n\t...]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:51.946Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.Version",
+  "message" : "HHH000412: Hibernate Core {5.3.10.Final}",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:51.948Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Environment",
+  "message" : "HHH000206: hibernate.properties not found",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:52.095Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.annotations.common.Version",
+  "message" : "HCANN000001: Hibernate Commons Annotations {5.0.4.Final}",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:52.281Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.dialect.Dialect",
+  "message" : "HHH000400: Using dialect: org.hibernate.dialect.H2Dialect",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:52.561Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "org.hibernate.mapping.RootClass",
+  "message" : "HHH000038: Composite-id class does not override equals(): br.com.arthur.implementacaoh2.entities.ContaRepasseId",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:52.561Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "org.hibernate.mapping.RootClass",
+  "message" : "HHH000039: Composite-id class does not override hashCode(): br.com.arthur.implementacaoh2.entities.ContaRepasseId",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:53.098Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.tool.schema.internal.SchemaCreatorImpl",
+  "message" : "HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1192c925'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:53.102Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:53.427Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.hql.internal.QueryTranslatorFactoryInitiator",
+  "message" : "HHH000397: Using ASTQueryTranslatorFactory",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:54.156Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor",
+  "message" : "Initializing ExecutorService 'applicationTaskExecutor'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:54.214Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration",
+  "message" : "spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:54.412Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.apache.coyote.http11.Http11NioProtocol",
+  "message" : "Starting ProtocolHandler [\"http-nio-8080\"]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:54.436Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "message" : "Tomcat started on port(s): 8080 (http) with context path ''",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:21:54.439Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "br.com.arthur.implementacaoh2.App",
+  "message" : "Started App in 5.388 seconds (JVM running for 5.993)",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:22:02.619Z",
+  "level" : "INFO",
+  "thread" : "http-nio-8080-exec-3",
+  "logger" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "message" : "Initializing Spring DispatcherServlet 'dispatcherServlet'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:22:02.620Z",
+  "level" : "INFO",
+  "thread" : "http-nio-8080-exec-3",
+  "logger" : "org.springframework.web.servlet.DispatcherServlet",
+  "message" : "Initializing Servlet 'dispatcherServlet'",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:22:02.628Z",
+  "level" : "INFO",
+  "thread" : "http-nio-8080-exec-3",
+  "logger" : "org.springframework.web.servlet.DispatcherServlet",
+  "message" : "Completed initialization in 8 ms",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:22:02.649Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-3",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "Before request [uri=/acordos_comerciais]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:22:02.940Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-3",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "After request [uri=/acordos_comerciais;payload={\n    \"id_acordo_comercial\": 1,\n    \"id_versao_acordo_comercial\": 1,\n    \"id_parceiro\": 1,\n    \"id_produto\": 1,\n    \"situacao\": \"ativo\",\n    \"data_inicio_vigencia\": \"2020-12-01\",\n    \"vigencia_indeterminada\": false,\n    \"data_fim_vigencia\": \"2020-12-02\",\n    \"configuracoes_canal\": [\n        {\n            \"id_canal\": \"C1\"\n        },\n        {\n            \"id_canal\": \"71\"\n        }\n    ],\n    \"contas_repasse\": [\n        {\n            \"id_conta\": 1,\n            \"codigo_finalidade_spb\": \"12345\",\n            \"percentual_raterio\": 50\n        },\n        {\n            \"id_conta\": 2,\n            \"codigo_finalidade_spb\": \"12345\",\n            \"percentual_raterio\": 50\n        }\n    ]\n}]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:22:06.665Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-2",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "Before request [uri=/acordos_comerciais]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:22:06.687Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-2",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "After request [uri=/acordos_comerciais;payload={\n    \"id_acordo_comercial\": 2,\n    \"id_versao_acordo_comercial\": 1,\n    \"id_parceiro\": 1,\n    \"id_produto\": 1,\n    \"situacao\": \"ativo\",\n    \"data_inicio_vigencia\": \"2020-12-01\",\n    \"vigencia_indeterminada\": false,\n    \"data_fim_vigencia\": \"2020-12-02\",\n    \"configuracoes_canal\": [\n        {\n            \"id_canal\": \"C1\"\n        },\n        {\n            \"id_canal\": \"71\"\n        }\n    ],\n    \"contas_repasse\": [\n        {\n            \"id_conta\": 1,\n            \"codigo_finalidade_spb\": \"12345\",\n            \"percentual_raterio\": 50\n        },\n        {\n            \"id_conta\": 2,\n            \"codigo_finalidade_spb\": \"12345\",\n            \"percentual_raterio\": 50\n        }\n    ]\n}]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:22:10.139Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-4",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "Before request [uri=/acordos_comerciais]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:22:10.154Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-4",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "After request [uri=/acordos_comerciais;payload={\n    \"id_acordo_comercial\": 3,\n    \"id_versao_acordo_comercial\": 1,\n    \"id_parceiro\": 1,\n    \"id_produto\": 1,\n    \"situacao\": \"ativo\",\n    \"data_inicio_vigencia\": \"2020-12-01\",\n    \"vigencia_indeterminada\": false,\n    \"data_fim_vigencia\": \"2020-12-02\",\n    \"configuracoes_canal\": [\n        {\n            \"id_canal\": \"C1\"\n        },\n        {\n            \"id_canal\": \"71\"\n        }\n    ],\n    \"contas_repasse\": [\n        {\n            \"id_conta\": 1,\n            \"codigo_finalidade_spb\": \"12345\",\n            \"percentual_raterio\": 50\n        },\n        {\n            \"id_conta\": 2,\n            \"codigo_finalidade_spb\": \"12345\",\n            \"percentual_raterio\": 50\n        }\n    ]\n}]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:22:15.241Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-5",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "Before request [uri=/acordos_comerciais]",
+  "context" : "default"
+}{
+  "timestamp" : "2020-03-12T03:22:15.422Z",
+  "level" : "DEBUG",
+  "thread" : "http-nio-8080-exec-5",
+  "logger" : "org.springframework.web.filter.CommonsRequestLoggingFilter",
+  "message" : "After request [uri=/acordos_comerciais]",
+  "context" : "default"
 }

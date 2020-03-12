@@ -5,6 +5,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 
 import br.com.arthur.implementacaoh2.entities.AcordoComercialDb;
@@ -45,7 +48,8 @@ public class AcordoComercialRepositoryImpl implements AcordoComercialRepository{
 
 	@Override
 	public List<AcordoComercialDb> consultaAcordosComerciais() {
-		return acordoComercialRepositoryJpa.consultarAcordosComerciais()
+		Page<AcordoComercialIdDto> pageAcordosComerciais = acordoComercialRepositoryJpa.consultarAcordosComerciais(PageRequest.of(0, 2));
+		return pageAcordosComerciais.getContent()
 				.stream()
 				.map(acordoComercialId -> consultaAcordoComercial(acordoComercialId.getIdAcordoComercial(),
 						acordoComercialId.getIdVersaoAcordoComercial()))
